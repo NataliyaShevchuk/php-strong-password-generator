@@ -1,6 +1,6 @@
 <?php 
 
-include_once "data.php";
+include_once "functions.php";
 // var_dump($_POST);
 
 
@@ -57,9 +57,9 @@ include_once "data.php";
             <div class="row">
                 <div class="bg-white">
                     <form class="form-control" action="password.php" method="POST">
-                        <label for="">Lunghezza caratteri</label>
+                        <label class="mb-2" for="">Lunghezza caratteri desiderata</label>
                         <input class="form-control" type="number" name="password">
-                        <button class="btn btn-primary" type="submit">Generate</button>
+                        <button class="btn btn-primary mt-3" type="submit">Generate</button>
                         <h2>  </h2>
                     </form>
                 </div>

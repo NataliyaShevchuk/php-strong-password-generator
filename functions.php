@@ -5,9 +5,9 @@ function generatePassword($lengthPassword){
     $alphabet = 'abcdefghijklmnopqrstuvwxyz';
     $capitalAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $numbers = '0123456789';
-    $symbols = '!|£$%&/.-@#';
+    $symbols = '!|$&/.-@#';
 
-    $generate = $alphabet.$capitalAlphabet.$numbers.$symbols;
+    $generate = str_shuffle($alphabet.$capitalAlphabet.$numbers.$symbols);
 
     $newPassword = " ";
 
